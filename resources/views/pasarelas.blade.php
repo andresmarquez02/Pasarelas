@@ -45,13 +45,13 @@
     </div>
     @if (isset($errors) && $errors->any())
         @foreach ($errors as $message)
-            <div class="mb-3 text-red-500 bg-red-200 w-90">
+            <div class="mb-3 text-red-500 bg-red-200 w-90 p-3 rounded-lg z-10 fixed bottom-0 left-3">
                 {{$message}}
             </div>
         @endforeach
     @endif
     @if (session()->has("success"))
-        <div class="mb-3 text-red-500 bg-red-200 w-90">
+        <div class="mb-3 text-green-500 bg-red-200 w-90 p-3 rounded-lg z-10 fixed bottom-0 left-3">
             {{session()->get("success")}}
         </div>
     @endif

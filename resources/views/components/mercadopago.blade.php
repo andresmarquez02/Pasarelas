@@ -62,13 +62,13 @@
         }
     </script>
     <script>
-        const form = document.getElementById("paymentForm");
+        const formularioMercadoPago = document.getElementById("paymentForm");
 
-        form.addEventListener("submit", (e) => {
-            if(form.elements.method.value === "{{ $platform->id }}"){
+        formularioMercadoPago.addEventListener("submit", (e) => {
+            if(formularioMercadoPago.elements.method.value === "{{ $platform->id }}"){
                 e.preventDefault();
 
-                mp.createToken(form, function(status,response){
+                mp.createToken(formularioMercadoPago, function(status,response){
                     if(status != 200 && status != 201){
                         const error = document.getElementById("paymentErrors");
                         error.textContent = response.cause[0].description;
