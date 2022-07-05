@@ -16,22 +16,17 @@ class paymentPlatformSeeder extends Seeder
         DB::table("payment_platforms")->truncate();
         DB::table("payment_platforms")->insert([
             "platform" => "Paypal",
-            "image" => "img/paypal.jpg"
+            "image" => "img/paypal.png"
         ]);
 
         DB::table("payment_platforms")->insert([
             "platform" => "Stripe",
-            "image" => "img/stripe.jpg"
+            "image" => "img/stripe.png"
         ]);
 
         DB::table("payment_platforms")->insert([
             "platform" => "MercadoPago",
-            "image" => "img/mercadopago.jpg"
-        ]);
-
-        DB::table("payment_platforms")->insert([
-            "platform" => "PayU",
-            "image" => "img/payu.jpg"
+            "image" => "img/mercadopago.svg"
         ]);
     }
 }
