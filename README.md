@@ -70,7 +70,7 @@ Paso 8: Ejecutar en la linea de comando para generar las migraciones en conjunto
 
 Si quieres solo usar dos de estas plataformas solo debes comentar la insercion en los seeders.
 
-## Authors
+## Autor
 
 - [@andresmarquez](https://www.github.com/andresmarquez02)
 
